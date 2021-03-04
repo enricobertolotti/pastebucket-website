@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <div class="d-flex w-100">
+  <div style="position: relative">
+    <div class="d-flex w-100 header-bar">
       <Header />
     </div>
     <Nuxt />
@@ -9,13 +9,8 @@
 
 <script lang="ts">
 import Vue from 'vue'
-import Header from '@/components/Header.vue'
 
-export default Vue.extend({
-  components: {
-    Header,
-  },
-})
+export default Vue.extend({})
 </script>
 
 <style>

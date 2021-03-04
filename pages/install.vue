@@ -1,13 +1,13 @@
 <template>
-  <div></div>
+  <div class="container"><p class="m-0">Waow</p></div>
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
-import { Component } from 'vue-property-decorator'
-
-@Component({})
-export default class Install extends Vue {}
+export default {
+  transition: {
+    name: 'fade',
+  },
+}
 </script>
 
 <style lang="scss" scoped></style>

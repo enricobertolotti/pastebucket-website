@@ -4,15 +4,18 @@
       class="d-flex w-100 justify-content-between align-items-center"
       style="max-width: 900px"
     >
-      <div>
+      <div class="clickable" @click="$router.push('/')">
         <h4 id="logo-text">Pastebucket</h4>
       </div>
-      <a
-        href="https://github.com/enricobertolotti/pastebucket "
-        target="_blank"
-        class="link"
-        >Github</a
-      >
+      <div class="d-flex align-items-center">
+        <a
+          href="https://github.com/enricobertolotti/pastebucket "
+          target="_blank"
+          class="link mr-3"
+          >Github</a
+        >
+        <Button buttontext="Install" @clicked="$router.push('/install')" />
+      </div>
     </div>
   </div>
 </template>
