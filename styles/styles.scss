@@ -1,21 +1,31 @@
+body {
+  background-color: black;
+  color: white;
+}
+
 h1 {
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
   font-size: 50px;
 }
 
-a {
-  color: #fff;
+.link {
+  color: white;
   text-decoration: none;
   opacity: 0.8;
   transition: all 0.2s ease;
+
+  &:hover {
+    text-decoration: none;
+    color: white;
+    opacity: 1;
+  }
 }
 
-a:hover {
-  color: #fff;
-  opacity: 1;
-  text-shadow: 0px 4px 14px rgba(0, 0, 0, 0.15);
-}
+// a:hover {
+//   opacity: 1;
+//   text-shadow: 0px 4px 14px rgba(0, 0, 0, 0.15);
+// }
 
 .text-shadow {
   text-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
