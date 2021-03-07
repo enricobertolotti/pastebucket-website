@@ -1,10 +1,11 @@
 <template>
-  <div class="d-flex w-100 justify-content-center py-4">
+  <div class="d-flex w-100 justify-content-center" style="height: 140px">
     <div
       class="d-flex w-100 justify-content-between align-items-center"
       style="max-width: 900px"
     >
-      <div class="clickable" @click="$router.push('/')">
+      <div class="d-flex clickable" @click="$router.push('/')">
+        <img class="mr-2" src="/logo/pastebucket.svg" alt="Logo" />
         <h4 id="logo-text">Pastebucket</h4>
       </div>
       <div class="d-flex align-items-center">

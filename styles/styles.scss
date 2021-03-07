@@ -20,6 +20,10 @@ h1 {
   font-size: 50px;
 }
 
+.main-text-container {
+  max-width: 600px;
+}
+
 .link {
   color: white;
   text-decoration: none;
@@ -36,19 +40,32 @@ h1 {
 .rounded-button {
   height: 36px;
   border-radius: 18px;
-  padding: 0px 15px;
-  background-color: white;
+  padding: 0px 20px;
+  transition: all 0.2s ease;
+}
+
+.button-filled {
   color: black;
+  background-color: white;
+  background-size: 300%;
+  transition: all 0.3s;
+  &:hover {
+    background-position: 200%;
+  }
+}
+
+.button-outline {
+  border: 2px solid white;
+  color: white;
+  &:hover {
+    color: black;
+    background-color: white;
+  }
 }
 
 .clickable {
   cursor: pointer;
 }
-
-// a:hover {
-//   opacity: 1;
-//   text-shadow: 0px 4px 14px rgba(0, 0, 0, 0.15);
-// }
 
 .text-shadow {
   text-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
@@ -70,4 +87,13 @@ h1 {
     margin-left: auto;
     margin-right: auto;
   }
+}
+
+.animation-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  z-index: -1;
 }

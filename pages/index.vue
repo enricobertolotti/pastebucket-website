@@ -1,5 +1,18 @@
 <template>
-  <div class="container">Hello World</div>
+  <div>
+    <div class="main-text-container container d-flex flex-column">
+      <h1>Share files and text painlessly across all of your devices.</h1>
+      <Button
+        buttontext="Install"
+        class="mt-3"
+        :filled="true"
+        @clicked="$router.push('/install')"
+      />
+    </div>
+
+    <!-- Background -->
+    <Background />
+  </div>
 </template>
 
 <script lang="ts">
