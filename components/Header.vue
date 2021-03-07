@@ -1,9 +1,6 @@
 <template>
-  <div class="d-flex w-100 justify-content-center" style="height: 140px">
-    <div
-      class="d-flex w-100 justify-content-between align-items-center"
-      style="max-width: 900px"
-    >
+  <div class="d-flex w-100 header-container" style="height: 140px">
+    <div class="d-flex w-100 justify-content-between align-items-center">
       <div class="d-flex clickable" @click="$router.push('/')">
         <img class="mr-2" src="/logo/pastebucket.svg" alt="Logo" />
         <h4 id="logo-text">Pastebucket</h4>
@@ -25,4 +22,9 @@
 export default {}
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.header-container {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+</style>
