@@ -7,6 +7,7 @@
       <img src="" alt="" />
     </div>
     <img class="moving-wave" src="/graphics/wave1.svg" alt="wave" />
+    <img class="gradient1" src="/graphics/gradient1.svg" alt="gradient" />
     <!-- <img class="moving-wave" src="/graphics/wave2.svg" alt="wave" />
     <img class="moving-wave" src="/graphics/wave3.svg" alt="wave" /> -->
   </div>
@@ -28,6 +29,12 @@ export default class Background extends Vue {
   right: calc(100vw + 100px);
   animation: vertical 10s ease-in-out;
   animation-iteration-count: infinite;
+}
+
+.gradient1 {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .vertical-container {
